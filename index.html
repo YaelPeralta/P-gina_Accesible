@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mig-23 MLD - Información del Avión</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <aside>
+        <h2>Artículos de Aviones</h2>
+        <nav>
+            <a href="mig23.html">Mig-23 MLD</a>
+        </nav>
+    </aside>
+    <main>
+        <header>
+            <img src="https://israelnoticias.com/wp-content/uploads/2022/04/MiG-23-Flogger-il.webp" alt="" />
+        </header>
+
+        <section id="body" tabindex="0">
+            <h1>Mig-23 MLD</h1>
+            <p>A principios de los años 80, las mejoras en la estructura del MiG-23 en las variantes ML ("ML" significa "Lyogkiy" en ruso, 
+                que se traduce como "ligero" o "liviano" en español) y MLA fueron
+                consideradas "aún insuficientes" y demasiado difíciles de usar en combate contra los aviones de cuarta
+                generación más recientes. Como resultado, hasta que el MiG-29 resolviera sus problemas iniciales, se
+                ordenó una mejora definitiva del MiG-23. Esta versión incorporó tecnología del MiG-29, con una
+                estructura más liviana, nuevas alas reforzadas tipo 4 con slats y generadores de vórtices, y el motor
+                R-35F-300 más potente. Se reemplazó el radar por el nuevo N-008 con modos de combate cercanos, y se
+                actualizó completamente la aviónica, incluyendo el sistema de alerta de radar SPO-15L "Breyoza". El
+                resultado fue el MiG-23MLD, que en manos experimentadas logró superar incluso al MiG-29 en combates
+                simulados.</p>
+            <p>En War Thunder, el MiG-23 MLD es un caza soviético de rango VII, versátil y con un buen equilibrio entre
+                velocidad, maniobrabilidad y poder de fuego.</p>
+            <p>Está equipado con el potente motor R-35F-300, que proporciona excelente empuje y aceleración. Su radar
+                puede detectar y rastrear enemigos a larga distancia, siendo una amenaza seria en combate aire-aire.</p>
+        </section>
+
+        <section id="info" tabindex="0">
+            <h2>Rendimiento de Vuelo y Características Generales</h2>
+            <table tabindex="0">
+                <thead>
+                    <tr>
+                        <th colspan="2">Rendimiento de Vuelo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Velocidad máxima a 13,000 m</td>
+                        <td>2,358 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Velocidad de ascenso</td>
+                        <td>220 m/s</td>
+                    </tr>
+                    <tr>
+                        <td>Tiempo de giro</td>
+                        <td>33 s</td>
+                    </tr>
+                    <tr>
+                        <td>Altitud máxima</td>
+                        <td>16,000 m</td>
+                    </tr>
+                    <tr>
+                        <td>Distancia de despegue</td>
+                        <td>750 m</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table tabindex="0">
+                <thead>
+                    <tr>
+                        <th colspan="2">Características Generales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tripulación</td>
+                        <td>1 persona</td>
+                    </tr>
+                    <tr>    
+                        <td>Longitud</td>
+                        <td>16.7 m</td>
+                    </tr>
+                    <tr>
+                        <td>Envergadura</td>
+                        <td>7.8 - 14 m</td>
+                    </tr>
+                    <tr>
+                        <td>Motor</td>
+                        <td>Tumansky R-35-300</td>
+                    </tr>
+                    <tr>
+                        <td>Peso bruto</td>
+                        <td>15.8 t</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="links">
+            <h2>Enlaces de Referencia</h2>
+            <ul>
+                <li><a rel="noopener" href="https://wiki.warthunder.com/unit/mig_23mld" target="_blank">Wiki de War Thunder</a></li>
+                <li><a rel="noopener" href="https://es.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-23" target="_blank">Especificaciones del Mig-23 MLD</a></li>
+            </ul>
+        </section>
+
+        <section id="rating">
+            <h2>Califica el Avión</h2>
+            <button onclick="openModal()">Publicar Calificación</button>
+
+            <div id="ratingModal" class="modal">
+                <div class="modal-content">
+                    <button tabindex="0" class="close" onclick="closeModal()" aria-label="Cerrar">&times;</button>
+                    <form id="ratingForm">
+                        <div class="form-group">
+                            <label>Rendimiento en Vuelo
+                            <input type="range" name="flight" min="0" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Supervivencia
+                            <input type="range" name="survivability" min="0" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Combate Aéreo
+                            <input type="range" name="aerial" min="0" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Ataque Terrestre
+                            <input type="range" name="ground" min="0" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Balance
+                            <input type="range" name="balance" min="0" max="10">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>¿Te gusta este avión?
+                            <input type="checkbox" name="like">
+                            </label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="savedRatings">
+            <h2>Promedio de Calificaciones</h2>
+            <div id="averages"></div>
+        </section>
+    </main>
+
+    <script>
+        const modal = document.getElementById('ratingModal');
+        const form = document.getElementById('ratingForm');
+        const output = document.getElementById('averages');
+
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = new FormData(form);
+            const newRating = {
+                flight: +data.get('flight'),
+                survivability: +data.get('survivability'),
+                aerial: +data.get('aerial'),
+                ground: +data.get('ground'),
+                balance: +data.get('balance'),
+                like: data.get('like') === 'on' ? 1 : 0
+            };
+
+            const stored = JSON.parse(localStorage.getItem('mig23_ratings') || '[]');
+            stored.push(newRating);
+            localStorage.setItem('mig23_ratings', JSON.stringify(stored));
+
+            form.reset();
+            closeModal();
+            showAverages();
+        });
+
+        function showAverages() {
+            const ratings = JSON.parse(localStorage.getItem('mig23_ratings') || '[]');
+            if (ratings.length === 0) return output.innerHTML = '<p>Aún no hay calificaciones.</p>';
+
+            const categories = ['flight', 'survivability', 'aerial', 'ground', 'balance'];
+            const labels = {
+                flight: 'Rendimiento en Vuelo',
+                survivability: 'Supervivencia',
+                aerial: 'Combate Aéreo',
+                ground: 'Ataque Terrestre',
+                balance: 'Balance',
+                like: '¿Le gustó a los usuarios?'
+            };
+
+            const totals = {};
+            categories.forEach(cat => totals[cat] = 0);
+            let likeCount = 0;
+
+            ratings.forEach(r => {
+                categories.forEach(cat => totals[cat] += r[cat]);
+                if (r.like) likeCount++;
+            });
+
+            const averages = {};
+            categories.forEach(cat => {
+                averages[cat] = Math.round((totals[cat] / ratings.length) * 10);
+            });
+            averages.like = Math.round((likeCount / ratings.length) * 100);
+
+            output.innerHTML = [...categories, 'like'].map(cat => `
+                <div>
+                    <strong>${labels[cat]}:</strong>
+                    <div class="rating-bar">
+                        <div class="rating-bar-fill" style="width: ${averages[cat]}%;">
+                            ${averages[cat]}%
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        window.onload = showAverages;
+    </script>
+</body>
+
+</html>
