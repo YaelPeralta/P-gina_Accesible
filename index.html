@@ -22,7 +22,8 @@
 
         <section id="body" tabindex="0">
             <h1>Mig-23 MLD</h1>
-            <p>A principios de los años 80, las mejoras en la estructura del MiG-23 en las variantes ML ("ML" significa "Lyogkiy" en ruso, 
+            <p>A principios de los años 80, las mejoras en la estructura del MiG-23 en las variantes ML ("ML" significa
+                "Lyogkiy" en ruso,
                 que se traduce como "ligero" o "liviano" en español) y MLA fueron
                 consideradas "aún insuficientes" y demasiado difíciles de usar en combate contra los aviones de cuarta
                 generación más recientes. Como resultado, hasta que el MiG-29 resolviera sus problemas iniciales, se
@@ -81,7 +82,7 @@
                         <td>Tripulación</td>
                         <td>1 persona</td>
                     </tr>
-                    <tr>    
+                    <tr>
                         <td>Longitud</td>
                         <td>16.7 m</td>
                     </tr>
@@ -104,47 +105,54 @@
         <section id="links">
             <h2>Enlaces de Referencia</h2>
             <ul>
-                <li><a rel="noopener" href="https://wiki.warthunder.com/unit/mig_23mld" target="_blank">Wiki de War Thunder</a></li>
-                <li><a rel="noopener" href="https://es.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-23" target="_blank">Especificaciones del Mig-23 MLD</a></li>
+                <li><a rel="noopener" href="https://wiki.warthunder.com/unit/mig_23mld" target="_blank">Wiki de War
+                        Thunder</a></li>
+                <li><a rel="noopener" href="https://es.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-23"
+                        target="_blank">Especificaciones del Mig-23 MLD</a></li>
             </ul>
         </section>
 
         <section id="rating">
-            <h2>Califica el Avión</h2>
+            <h2 id="h2">Califica el Avión</h2>
             <button onclick="openModal()">Publicar Calificación</button>
 
             <div id="ratingModal" class="modal">
                 <div class="modal-content">
                     <button tabindex="0" class="close" onclick="closeModal()" aria-label="Cerrar">&times;</button>
                     <form id="ratingForm">
-                        <div class="form-group">
+                        <div class="form-group" id="lbl5">
                             <label>Rendimiento en Vuelo
-                            <input type="range" name="flight" min="0" max="10">
+                                <input type="range" id="inp5" name="flight" min="0" max="10"
+                                    aria-labelledby="h5 lbl5 inp5">
                             </label>
                         </div>
                         <div class="form-group">
-                            <label>Supervivencia
-                            <input type="range" name="survivability" min="0" max="10">
+                            <label id="lbl1">Supervivencia
+                                <input type="range" id="inp1" name="survivability" min="0" max="10"
+                                    aria-labelledby="h2 lbl1 inp1">
                             </label>
                         </div>
                         <div class="form-group">
-                            <label>Combate Aéreo
-                            <input type="range" name="aerial" min="0" max="10">
+                            <label id="lbl2">Combate Aéreo
+                                <input type="range" id="inp2" name="aerial" min="0" max="10"
+                                    aria-labelledby="h2 lbl2 inp2">
                             </label>
                         </div>
                         <div class="form-group">
-                            <label>Ataque Terrestre
-                            <input type="range" name="ground" min="0" max="10">
+                            <label id="lbl3">Ataque Terrestre
+                                <input type="range" id="inp3" name="ground" min="0" max="10"
+                                    aria-labelledby="h2 lbl3 inp3">
                             </label>
                         </div>
                         <div class="form-group">
-                            <label>Balance
-                            <input type="range" name="balance" min="0" max="10">
+                            <label id="lbl4">Balance
+                                <input type="range" id="inp4" name="balance" min="0" max="10"
+                                    aria-labelledby="h2 lbl4 inp4">
                             </label>
                         </div>
                         <div class="form-group">
                             <label>¿Te gusta este avión?
-                            <input type="checkbox" name="like">
+                                <input type="checkbox" name="like">
                             </label>
                         </div>
                         <button type="submit">Enviar</button>
